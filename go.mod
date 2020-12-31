@@ -1,5 +1,3 @@
-module github.com/heteddy/gojieba
+module github.com/yanyiwu/gojieba
 
 go 1.13
-
-require github.com/yanyiwu/gojieba v1.1.2 // indirect
