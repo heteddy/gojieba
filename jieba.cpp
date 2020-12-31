@@ -84,6 +84,10 @@ void AddWord(Jieba x, const char* word) {
   ((cppjieba::Jieba*)x)->InsertUserWord(word);
 }
 
+void AddWordTag(Jieba x, const char* word,const char* tag) {
+  ((cppjieba::Jieba*)x)->InsertUserWord(word,tag);
+}
+
 Word* Tokenize(Jieba x, const char* sentence, TokenizeMode mode, int is_hmm_used) {
   std::vector<cppjieba::Word> words;
   switch (mode) {
